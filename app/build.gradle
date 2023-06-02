@@ -26,6 +26,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
@@ -46,11 +49,11 @@ android {
         }
     }
 
-    /*publishing {
+    publishing {
         singleVariant("debug") {
             // if you don't want sources/javadoc, remove these lines
         }
-    }*/
+    }
 }
 
 dependencies {
@@ -75,7 +78,6 @@ dependencies {
     implementation project(':avteste')
 }
 
-/*
 afterEvaluate {
     publishing {
         publications {
@@ -86,8 +88,9 @@ afterEvaluate {
 
                 groupId = 'com.kavsdk.teste'
                 artifactId = 'debug-aab'
-                version = '1.0'
+                version = '1.1.2'
             }
         }
     }
-}*/
+}
+
